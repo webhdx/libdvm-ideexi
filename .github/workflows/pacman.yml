@@ -1,0 +1,20 @@
+name: Update pacman package
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+jobs:
+  dispatch:
+    name: Trigger pacman-packages build
+    runs-on: ubuntu-latest
+
+    steps:
+      # Fine-grained token with "Contents: Read and write" on webhdx/pacman-packages
+      - name: Send repository_dispatch
+        env:
+          GH_TOKEN: ${{ secrets.PACMAN_PACKAGES_TOKEN }}
+        run: gh api -X POST repos/webhdx/pacman-packages/dispatches -f event_type=run_build

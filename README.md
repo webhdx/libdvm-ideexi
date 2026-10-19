@@ -36,4 +36,4 @@ The `__io_ataa` / `__io_atab` / `__io_atac` interfaces can also be passed direct
 
 ## License
 
-GPL-2.0, see `LICENSE`.
+GPL-3.0-or-later, see `LICENSE`. The driver (`source/ideexi.c`, `include/ideexi.h`) comes from [Swiss](https://github.com/emukidid/swiss-gc), licensed under GPL-2.0-or-later.

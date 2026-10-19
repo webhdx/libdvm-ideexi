@@ -4,7 +4,7 @@ pkgver=r0.0000000
 pkgrel=1
 pkgdesc='IDE-EXI / M.2 Loader disc interface for libdvm on GameCube and Wii.'
 arch=('any')
-license=('GPL-2.0-only')
+license=('GPL-3.0-or-later')
 groups=('gamecube-dev' 'wii-dev')
 depends=('devkitPPC>=r49' 'libogc2' 'libogc2-libdvm')
 makedepends=('catnip' 'cmake' 'git' 'libogc2-cmake' 'ninja')
